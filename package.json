@@ -1,0 +1,30 @@
+{
+  "name": "subtitle-processor",
+  "version": "0.0.0",
+  "description": "A set of API for subtitle processing",
+  "author": "astralcai <astralcai@gmail.com>",
+  "main": "dist/functions/__main__.js",
+  "scripts": {
+    "build": "npm run build-ts && npm run lint && npx ts-node copyProjectFiles.ts",
+    "build-ts": "tsc",
+    "watch-ts": "tsc -w",
+    "lint": "npx tslint -c tslint.json -p tsconfig.json"
+  },
+  "dependencies": {},
+  "private": true,
+  "stdlib": {
+    "build": "faaslang",
+    "name": "astralcai/subtitle-processor",
+    "timeout": 10000,
+    "personalize": {
+      "keys": [],
+      "user": []
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^10.12.24",
+    "shelljs": "^0.8.3",
+    "tslint": "^5.12.1",
+    "typescript": "^3.3.3"
+  }
+}
