@@ -1,5 +1,5 @@
 {
-  "name": "subtitle-processor",
+  "name": "subtitle-processor-stdlib",
   "version": "0.0.0",
   "description": "A set of API for subtitle processing",
   "author": "astralcai <astralcai@gmail.com>",
@@ -10,7 +10,9 @@
     "watch-ts": "tsc -w",
     "lint": "npx tslint -c tslint.json -p tsconfig.json"
   },
-  "dependencies": {},
+  "dependencies": {
+    "subtitle-processor": "^1.2.0"
+  },
   "private": true,
   "stdlib": {
     "build": "faaslang",
